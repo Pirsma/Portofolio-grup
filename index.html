@@ -4,7 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Kelompok</title>
+
+  <!-- EXTERNAL CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- INTERNAL CSS -->
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    #about {
+      text-align: center;
+      padding: 40px;
+    }
+
+    #skills {
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -21,22 +43,47 @@
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Our Team</h1>
+
+  <!-- INLINE CSS -->
+  <h1 style="color: gold; text-align: center;">
+    Our Team
+  </h1>
 
   <div class="team-container">
 
     <div class="profile-card">
       <img src="foto1.jpeg" class="profile">
+
       <h2>Virsma Syarief R.</h2>
-      <p>Frontend Developer</p>
-      <a href="cv-virsma.pdf" download class="btn-download">Download CV</a>
+
+      <!-- INLINE CSS -->
+      <p style="color: lightgray;">
+        Frontend Developer
+      </p>
+
+      <a href="cv-virsma.pdf"
+         download
+         class="btn-download">
+         Download CV
+      </a>
     </div>
 
     <div class="profile-card">
       <img src="foto2.jpeg" class="profile">
+
       <h2>Rifqi Hafis B.</h2>
-      <p>Backend Developer</p>
-      <a href="cv-rifqi.pdf" download class="btn-download">Download CV</a>
+
+      <!-- INLINE CSS -->
+      <p style="color: lightgray;">
+        Backend Developer
+      </p>
+
+      <a href="cv-rifqi.pdf"
+         download
+         class="btn-download">
+         Download CV
+      </a>
+
     </div>
 
   </div>
@@ -44,73 +91,31 @@
 
 <!-- ABOUT -->
 <section id="about">
+
   <h2>About Us</h2>
+
   <p>
     Kami adalah mahasiswa Teknik Informatika yang sedang belajar membuat
     website portfolio menggunakan teknologi frontend dan backend.
   </p>
+
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
+
   <h2>Skills</h2>
 
   <div class="skills-container">
 
-    <div class="skills-box">
-      <h3>Virsma</h3>
-
-      <p>HTML</p>
-      <div class="bar"><span data-width="90%"></span></div>
-
-      <p>CSS</p>
-      <div class="bar"><span data-width="85%"></span></div>
-
-      <p>JavaScript</p>
-      <div class="bar"><span data-width="75%"></span></div>
-
-      <p>PHP</p>
-      <div class="bar"><span data-width="60%"></span></div>
-    </div>
-
-    <div class="skills-box">
-      <h3>Rifqi</h3>
-
-      <p>HTML</p>
-      <div class="bar"><span data-width="70%"></span></div>
-
-      <p>CSS</p>
-      <div class="bar"><span data-width="65%"></span></div>
-
-      <p>JavaScript</p>
-      <div class="bar"><span data-width="50%"></span></div>
-
-      <p>PHP</p>
-      <div class="bar"><span data-width="20%"></span></div>
-    </div>
+    <div class="skills-box">HTML</div>
+    <div class="skills-box">CSS</div>
+    <div class="skills-box">JavaScript</div>
+    <div class="skills-box">PHP</div>
 
   </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact Us</h2>
-
-  <!-- TANPA PHP -->
-  <form id="contactForm">
-    <input type="text" name="nama" placeholder="Nama" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="pesan" placeholder="Pesan" required></textarea>
-    <button type="submit">Kirim Pesan</button>
-  </form>
 
 </section>
-
-<footer>
-  <p>© 2026 Portfolio Team</p>
-</footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
