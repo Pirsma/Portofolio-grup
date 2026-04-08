@@ -4,7 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Kelompok</title>
+
+  <!-- EXTERNAL CSS (sudah ada) -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- INTERNAL CSS (hanya untuk teks biasa) -->
+  <style>
+    #about p {
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -21,22 +32,43 @@
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Our Team</h1>
+
+  <!-- INLINE CSS (teks saja, tidak memengaruhi animasi) -->
+  <h1 style="color: gold;">
+    Our Team
+  </h1>
 
   <div class="team-container">
 
     <div class="profile-card">
       <img src="foto1.jpeg" class="profile">
+
       <h2>Virsma Syarief R.</h2>
-      <p>Frontend Developer</p>
-      <a href="cv-virsma.pdf" download class="btn-download">Download CV</a>
+
+      <!-- INLINE CSS -->
+      <p style="color: gray;">
+        Frontend Developer
+      </p>
+
+      <a href="cv-virsma.pdf" download class="btn-download">
+        Download CV
+      </a>
     </div>
 
     <div class="profile-card">
       <img src="foto2.jpeg" class="profile">
+
       <h2>Rifqi Hafis B.</h2>
-      <p>Backend Developer</p>
-      <a href="cv-rifqi.pdf" download class="btn-download">Download CV</a>
+
+      <!-- INLINE CSS -->
+      <p style="color: gray;">
+        Backend Developer
+      </p>
+
+      <a href="cv-rifqi.pdf" download class="btn-download">
+        Download CV
+      </a>
+
     </div>
 
   </div>
@@ -44,17 +76,32 @@
 
 <!-- ABOUT -->
 <section id="about">
-  <h2>About Us</h2>
+
+  <h2 style="text-align: center;">
+    About Us
+  </h2>
+
   <p>
     Kami adalah mahasiswa Teknik Informatika yang sedang belajar membuat
     website portfolio menggunakan teknologi frontend dan backend.
   </p>
+
 </section>
 
-<!-- SKILLS -->
+<!-- SKILLS (TIDAK DIUBAH sama sekali) -->
 <section id="skills">
   <h2>Skills</h2>
 
   <div class="skills-container">
 
-    <div class="skills-box">
+    <div class="skills-box">HTML</div>
+    <div class="skills-box">CSS</div>
+    <div class="skills-box">JavaScript</div>
+    <div class="skills-box">PHP</div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
