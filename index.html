@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Kelompok</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- INTERNAL CSS (hanya untuk footer) -->
+  <style>
+    footer {
+      text-align: center;
+      font-size: 14px;
+      font-style: italic;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -45,10 +55,13 @@
 <!-- ABOUT -->
 <section id="about">
   <h2>About Us</h2>
-  <p>
+
+  <!-- INLINE CSS hanya di paragraf About -->
+  <p style="text-align: center; color: gray;">
     Kami adalah mahasiswa Teknik Informatika yang sedang belajar membuat
     website portfolio menggunakan teknologi frontend dan backend.
   </p>
+
 </section>
 
 <!-- SKILLS -->
@@ -96,7 +109,6 @@
 <section id="contact">
   <h2>Contact Us</h2>
 
-  <!-- TANPA PHP -->
   <form id="contactForm">
     <input type="text" name="nama" placeholder="Nama" required>
     <input type="email" name="email" placeholder="Email" required>
@@ -107,7 +119,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Portfolio Team</p>
+  © 2026 Portfolio Team
 </footer>
 
 <script src="script.js"></script>
